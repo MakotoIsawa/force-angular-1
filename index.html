@@ -1,0 +1,20 @@
+<apex:page showHeader="false" standardStyleSheets="false" applyBodyTag="false" applyHtmlTag="false" docType="html-5.0" >
+  
+<html ng-app="ngbootcamp">
+<head>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.10/angular.min.js"></script>
+  <script>
+    var ngbootcamp = angular.module('ngbootcamp', []);
+     
+    ngbootcamp.controller('guestCtl', function($scope){
+      $scope.guestName = 'いさわ まこと';
+    });
+  </script>
+</head>
+<body ng-controller="guestCtl">
+  <input type="text" ng-model="guestName" />
+  <h1>{{guestName}}</h1>
+</body>
+</html>
+  
+</apex:page>
